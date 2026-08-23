@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" role="img" aria-label="An isometric crab typing at a terminal, surrounded by floating agent, RAG and automation nodes">
+  <title>Crab engineer at work</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/><stop offset="55%" stop-color="#131c2b"/><stop offset="100%" stop-color="#0b1220"/>
+    </linearGradient>
+    <linearGradient id="shellA" x1="0.1" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#ffa878"/><stop offset="100%" stop-color="#ef6a41"/>
+    </linearGradient>
+    <linearGradient id="shellB" x1="0.5" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ef6a41"/><stop offset="100%" stop-color="#c33f26"/>
+    </linearGradient>
+    <linearGradient id="shellRim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a83420"/><stop offset="100%" stop-color="#6f1d11"/>
+    </linearGradient>
+    <linearGradient id="clawG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffa878"/><stop offset="100%" stop-color="#cf4629"/>
+    </linearGradient>
+    <linearGradient id="deskTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a3purple"/><stop offset="0%" stop-color="#2a3a4e"/><stop offset="100%" stop-color="#1c2736"/>
+    </linearGradient>
+    <linearGradient id="screenG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#102638"/><stop offset="100%" stop-color="#07131f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#36bcf7" stop-opacity="0.30"/><stop offset="100%" stop-color="#36bcf7" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+
+  <rect width="900" height="300" rx="14" fill="url(#bg)"/>
+
+  <g stroke="#1e2f45" stroke-width="1" opacity="0.5">
+    <path d="M0 244 H900"/><path d="M0 266 H900"/><path d="M0 288 H900"/>
+    <path d="M150 244 L96 300"/><path d="M330 244 L306 300"/><path d="M570 244 L594 300"/><path d="M750 244 L804 300"/>
+  </g>
+
+  <ellipse cx="446" cy="228" rx="240" ry="44" fill="url(#glow)"/>
+
+  <!-- ===== floating nodes: left ===== -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">
+    <g><animateTransform attributeName="transform" type="translate" values="0 0; 0 -7; 0 0" dur="5s" repeatCount="indefinite"/>
+      <rect x="44" y="56" width="104" height="30" rx="8" fill="#111f30" stroke="#36bcf7" stroke-opacity="0.5"/>
+      <circle cx="60" cy="71" r="4" fill="#36bcf7"/><text x="73" y="75" fill="#9fd8f5">agents</text></g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 0; 0 6; 0 0" dur="6.5s" repeatCount="indefinite"/>
+      <rect x="28" y="120" width="86" height="30" rx="8" fill="#111f30" stroke="#3fb950" stroke-opacity="0.5"/>
+      <circle cx="44" cy="135" r="4" fill="#3fb950"/><text x="57" y="139" fill="#a7e3b4">RAG</text></g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="7.5s" repeatCount="indefinite"/>
+      <rect x="52" y="184" width="90" height="30" rx="8" fill="#111f30" stroke="#e3a008" stroke-opacity="0.5"/>
+      <circle cx="68" cy="199" r="4" fill="#e3a008"/><text x="81" y="203" fill="#f0d089">n8n</text></g>
+  </g>
+  <g stroke="#36bcf7" stroke-opacity="0.26" stroke-width="1.4" fill="none" stroke-dasharray="4 6">
+    <path d="M148 71 C 210 74, 240 104, 300 118"/>
+    <path d="M114 135 C 180 136, 230 130, 300 128"/>
+    <path d="M142 199 C 190 196, 240 164, 300 140"/>
+    <animate attributeName="stroke-dashoffset" values="0;-40" dur="3s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ===== monitor (behind crab) ===== -->
+  <g>
+    <path d="M392 56 L560 56 L560 160 L392 160 Z" fill="#1d2a3a"/>
+    <path d="M400 64 L552 64 L552 152 L400 152 Z" fill="url(#screenG)"/>
+    <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="8">
+      <text x="409" y="81" fill="#7ee787">def</text><text x="429" y="81" fill="#79c0ff">retrieve</text><text x="474" y="81" fill="#8b949e">(q):</text>
+      <text x="416" y="96" fill="#8b949e">docs = index.search(q)</text>
+      <text x="416" y="111" fill="#8b949e">return rerank(docs)</text>
+      <text x="409" y="132" fill="#7ee787">▸</text>
+      <text x="500" y="132" fill="#3fb950">hit@5 0.94</text>
+      <rect x="409" y="138" width="5" height="9" fill="#36bcf7"><animate attributeName="opacity" values="1;1;0;0" dur="1.1s" repeatCount="indefinite"/></rect>
+    </g>
+    <path d="M400 64 L552 64 L552 152 L400 152 Z" fill="#36bcf7" opacity="0.05"/>
+    <path d="M462 160 L490 160 L496 180 L456 180 Z" fill="#243244"/>
+    <rect x="440" y="178" width="72" height="7" rx="3.5" fill="#243244"/>
+  </g>
+
+  <!-- ===== desk ===== -->
+  <path d="M286 200 L616 200 L664 232 L334 232 Z" fill="url(#deskTop)"/>
+  <path d="M286 200 L334 232 L334 244 L286 212 Z" fill="#16202d"/>
+  <path d="M616 200 L664 232 L664 244 L616 212 Z" fill="#16202d"/>
+  <path d="M286 200 L616 200 L616 204 L286 204 Z" fill="#35485f" opacity="0.7"/>
+
+  <!-- ===== crab (behind desk edge, torso above) ===== -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 14; 0 11.5; 0 14" dur="3.4s" repeatCount="indefinite"/>
+    <ellipse cx="446" cy="206" rx="74" ry="12" fill="#000" opacity="0.4" filter="url(#soft)"/>
+
+    <!-- back legs -->
+    <g stroke="#8f2c1a" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.95">
+      <path d="M400 176 C 380 178, 368 186, 362 196"/>
+      <path d="M492 176 C 512 178, 524 186, 530 196"/>
+      <path d="M406 184 C 388 190, 378 196, 374 202"/>
+      <path d="M486 184 C 504 190, 514 196, 518 202"/>
+    </g>
+
+    <!-- eye stalks -->
+    <path d="M430 148 L426 126" stroke="#b8371f" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M462 148 L466 126" stroke="#b8371f" stroke-width="4.5" stroke-linecap="round"/>
+    <g>
+      <circle cx="426" cy="121" r="8.5" fill="#fdfdfd"/><circle cx="466" cy="121" r="8.5" fill="#fdfdfd"/>
+      <g><circle cx="427.5" cy="122" r="4" fill="#10151c"/><circle cx="467.5" cy="122" r="4" fill="#10151c"/>
+        <animate attributeName="opacity" values="1;1;1;1;1;0;1" dur="4.8s" repeatCount="indefinite"/></g>
+      <circle cx="424.5" cy="118.5" r="1.6" fill="#fff" opacity="0.9"/><circle cx="464.5" cy="118.5" r="1.6" fill="#fff" opacity="0.9"/>
+    </g>
+
+    <!-- shell: faceted for isometric depth -->
+    <path d="M394 172 C 394 190, 416 200, 446 200 C 476 200, 498 190, 498 172 Z" fill="url(#shellRim)"/>
+    <path d="M446 140 C 416 140, 394 154, 394 172 C 394 176, 446 180, 446 180 Z" fill="url(#shellA)"/>
+    <path d="M446 140 C 476 140, 498 154, 498 172 C 498 176, 446 180, 446 180 Z" fill="url(#shellB)"/>
+    <path d="M394 172 C 394 182, 416 190, 446 190 C 476 190, 498 182, 498 172 C 498 176, 446 180, 446 180 C 446 180, 394 176, 394 172 Z" fill="#d8542f" opacity="0.85"/>
+    <ellipse cx="428" cy="138" rx="18" ry="8" fill="#ffc4a3" opacity="0.30"/>
+    <path d="M410 178 C 424 184, 468 184, 482 178" stroke="#8f2c1a" stroke-width="1.5" fill="none" opacity="0.55"/>
+    <circle cx="424" cy="170" r="1.7" fill="#8f2c1a" opacity="0.4"/>
+    <circle cx="446" cy="174" r="1.7" fill="#8f2c1a" opacity="0.4"/>
+    <circle cx="468" cy="170" r="1.7" fill="#8f2c1a" opacity="0.4"/>
+
+    <!-- LEFT arm + claw, in front, typing -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0 402 188; -14 402 188; 0 402 188" dur="0.62s" repeatCount="indefinite"/>
+      <path d="M404 184 C 396 194, 394 202, 398 210" stroke="#cf4629" stroke-width="9.5" stroke-linecap="round" fill="none"/>
+      <path d="M399 205 C 383 199, 369 207, 370 218 C 371 227, 381 231, 390 228 L385 219 Z" fill="url(#clawG)"/>
+      <path d="M385 219 C 377 222, 374 227, 378 231 C 383 235, 392 232, 396 226 Z" fill="#b8371f"/>
+      <path d="M370 218 L385 219" stroke="#7d2214" stroke-width="1.6" opacity="0.75"/>
+    </g>
+
+    <!-- RIGHT arm + claw, in front, typing offset -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0 490 188; 14 490 188; 0 490 188" dur="0.62s" begin="0.31s" repeatCount="indefinite"/>
+      <path d="M488 184 C 496 194, 498 202, 494 210" stroke="#cf4629" stroke-width="9.5" stroke-linecap="round" fill="none"/>
+      <path d="M493 205 C 509 199, 523 207, 522 218 C 521 227, 511 231, 502 228 L507 219 Z" fill="url(#clawG)"/>
+      <path d="M507 219 C 515 222, 518 227, 514 231 C 509 235, 500 232, 496 226 Z" fill="#b8371f"/>
+      <path d="M522 218 L507 219" stroke="#7d2214" stroke-width="1.6" opacity="0.75"/>
+    </g>
+  </g>
+
+  <!-- keyboard: in front of claws -->
+  <g>
+    <path d="M382 214 L510 214 L524 226 L396 226 Z" fill="#31425a"/>
+    <path d="M382 214 L510 214 L510 217 L382 217 Z" fill="#44597a" opacity="0.8"/>
+    <g fill="#4c6484">
+      <rect x="396" y="217" width="12" height="3.6" rx="1.2"/><rect x="413" y="217" width="12" height="3.6" rx="1.2"/>
+      <rect x="430" y="217" width="12" height="3.6" rx="1.2"/><rect x="447" y="217" width="12" height="3.6" rx="1.2"/>
+      <rect x="464" y="217" width="12" height="3.6" rx="1.2"/><rect x="481" y="217" width="12" height="3.6" rx="1.2"/>
+      <rect x="404" y="222" width="86" height="3.2" rx="1.4"/>
+    </g>
+  </g>
+
+  <!-- mug -->
+  <g>
+    <path d="M556 196 L578 196 L575 214 L559 214 Z" fill="#2f4157"/>
+    <ellipse cx="567" cy="196" rx="11" ry="3.4" fill="#3d5573"/>
+    <path d="M578 200 C 586 200, 586 209, 578 209" stroke="#2f4157" stroke-width="2.6" fill="none"/>
+    <g opacity="0.5" stroke="#8fb6d4" stroke-width="1.3" fill="none">
+      <path d="M563 190 C 561 185, 566 183, 564 178"><animate attributeName="opacity" values="0.15;0.6;0.15" dur="3.6s" repeatCount="indefinite"/></path>
+      <path d="M571 190 C 569 186, 574 183, 572 179"><animate attributeName="opacity" values="0.5;0.12;0.5" dur="4.2s" repeatCount="indefinite"/></path>
+    </g>
+  </g>
+
+  <!-- ===== right pipeline ===== -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10.5">
+    <g><animateTransform attributeName="transform" type="translate" values="0 0; 0 -6; 0 0" dur="6s" repeatCount="indefinite"/>
+      <rect x="686" y="60" width="122" height="34" rx="9" fill="#111f30" stroke="#a371f7" stroke-opacity="0.55"/>
+      <text x="702" y="81" fill="#c9adf9">ingest → embed</text></g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 0; 0 5; 0 0" dur="7s" repeatCount="indefinite"/>
+      <rect x="712" y="122" width="132" height="34" rx="9" fill="#111f30" stroke="#36bcf7" stroke-opacity="0.55"/>
+      <text x="728" y="143" fill="#9fd8f5">retrieve → rank</text></g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="8s" repeatCount="indefinite"/>
+      <rect x="684" y="184" width="130" height="34" rx="9" fill="#111f30" stroke="#3fb950" stroke-opacity="0.55"/>
+      <text x="700" y="205" fill="#a7e3b4">ship → monitor</text></g>
+  </g>
+  <g stroke="#3fb950" stroke-opacity="0.28" stroke-width="1.4" fill="none" stroke-dasharray="4 6">
+    <path d="M600 132 C 640 122, 660 88, 686 78"/>
+    <path d="M604 146 C 650 146, 682 140, 712 139"/>
+    <path d="M600 160 C 636 172, 656 194, 684 200"/>
+    <animate attributeName="stroke-dashoffset" values="0;-40" dur="3.4s" repeatCount="indefinite"/>
+  </g>
+
+  <g fill="#36bcf7" opacity="0.5">
+    <circle cx="212" cy="42" r="1.8"><animate attributeName="cy" values="42;32;42" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="640" cy="256" r="1.8"><animate attributeName="cy" values="256;246;256" dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="856" cy="104" r="1.8"><animate attributeName="cy" values="104;96;104" dur="7s" repeatCount="indefinite"/></circle>
+    <circle cx="104" cy="262" r="1.8"><animate attributeName="cy" values="262;254;262" dur="5.5s" repeatCount="indefinite"/></circle>
+  </g>
+</svg>
